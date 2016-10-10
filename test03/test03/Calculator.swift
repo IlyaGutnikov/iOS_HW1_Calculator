@@ -28,13 +28,16 @@ class Calculator {
     
     private var operations: [String: OperationType] = [
         "√": OperationType.unary(sqrt),
-        "∗": OperationType.unary({ $0*$0 }),
+        "∗": OperationType.unary({ $0*$0 }), //переименовать
         "π": OperationType.unary({_ in return M_PI }),
         "+": OperationType.binary({ $0 + $1 }),
         "-": OperationType.binary({ $0 - $1 }),
         "/": OperationType.binary({ $0 / $1 }),
         "*": OperationType.binary({ $0 * $1 }),
         "=": OperationType.equal
+        //TODO: деление с остатком
+        // возведение в степень
+        // факториал (возможно)
     ]
     
     func setNumber(number: Double) {

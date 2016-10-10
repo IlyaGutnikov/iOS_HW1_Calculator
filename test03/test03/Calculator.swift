@@ -1,10 +1,3 @@
-//
-//  Calculator.swift
-//  test03
-//
-//  Created by Gennady Evstratov on 06/10/2016.
-//  Copyright © 2016 test. All rights reserved.
-//
 
 import Foundation
 
@@ -25,20 +18,34 @@ class Calculator {
     
     private var accumulator = 0.0
     
+    static func factorial(number: Double) -> Double {
+        
+        if (number <= 1) {
+            return 1
+        }
+        
+        return number * factorial(number: number - 1)
+    }
+    
+   static func mod(dividend: Double, divider: Double) -> (Double) {
+        
+        return dividend.truncatingRemainder(dividingBy: divider)
+    }
     
     private var operations: [String: OperationType] = [
         "√": OperationType.unary(sqrt),
-        "∗": OperationType.unary({ $0*$0 }), //переименовать
+        "^2": OperationType.unary({ $0*$0 }),
         "π": OperationType.unary({_ in return M_PI }),
         "+": OperationType.binary({ $0 + $1 }),
         "-": OperationType.binary({ $0 - $1 }),
         "/": OperationType.binary({ $0 / $1 }),
         "*": OperationType.binary({ $0 * $1 }),
+        "^": OperationType.binary({pow($0, $1)}),
+        "!": OperationType.unary({Calculator.factorial(number: $0)}),
+        "mod": OperationType.binary({Calculator.mod(dividend: $0, divider: $1)}),
         "=": OperationType.equal
-        //TODO: деление с остатком
-        // возведение в степень
-        // факториал (возможно)
     ]
+    
     
     func setNumber(number: Double) {
         self.accumulator = number

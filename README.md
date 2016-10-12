@@ -21,8 +21,19 @@
 
 ##Autolayout под iPad Air 2:
 
-![ipadAir2_H.png](https://github.com/IlyaGutnikov/iOS_HW1_Calculator/tree/master/HW1_Screens/ipadAir2_H.png)
+![ipadAir2_H](https://github.com/IlyaGutnikov/iOS_HW1_Calculator/tree/master/HW1_Screens/ipadAir2_H.png)
 
-![ipadAir2_V.png](https://github.com/IlyaGutnikov/iOS_HW1_Calculator/tree/master/HW1_Screens/ipadAir2_V.png)
+![ipadAir2_V](https://github.com/IlyaGutnikov/iOS_HW1_Calculator/tree/master/HW1_Screens/ipadAir2_V.png)
 
+##Autolayout под iPhone 5S:
+
+![iphone5s_H](https://github.com/IlyaGutnikov/iOS_HW1_Calculator/tree/master/HW1_Screens/iphone5s_H.png)
+
+![iphone5s_V](https://github.com/IlyaGutnikov/iOS_HW1_Calculator/tree/master/HW1_Screens/iphone5s_V.png)
+
+##Autolayout под iPhone 6s:
+
+![iphone6s_H](https://github.com/IlyaGutnikov/iOS_HW1_Calculator/tree/master/HW1_Screens/iphone6s_H.png)
+
+![iphone6s_V](https://github.com/IlyaGutnikov/iOS_HW1_Calculator/tree/master/HW1_Screens/iphone6s_V.png)
 
